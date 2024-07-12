@@ -1,0 +1,480 @@
+/* =================================
+
+Template Name : Poland - Portfolio Template
+Template URI:
+Description: An Awesome Portfolio Template
+Author : Mehedi
+Author URI : webmasum.xyz
+Support: engineermasum64@gmail.com
+Versoion: 1.0
+
+===================================== */
+
+/*==================================
+CSS INDEX
+=========
+    1.COMMON CSS
+      REUSUABL COMPNENETS 
+    2.Hero
+    3.OFFER
+    4.PROCESS
+    5.EXPERIENCE
+    6.PORTFOLIO
+    7.TESTMONEL
+    8.CONTUCT
+=====================================*/
+
+/*==================================
+    1.COMMON CSS
+=====================================*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    text-rendering: optimizeLegibility;
+    line-height: 1.2;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #b98000;
+}
+p {
+    margin-top: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style-type: none;
+}
+h1, h2, h3, h4 {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 0;
+    font-weight: bold;
+}
+h1 {
+    font-weight: 100%;
+    font-size:3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+    margin: 10rem;
+    margin-bottom: 0;
+    padding: 0;
+    display: inline-block;
+    margin-left: 8%;
+}
+h1 .color-red {
+    color: #ed6950;
+    font-size: 3.5rem;
+    font-family: "Montserrat", sans-serif;
+}
+h2 {
+    font-size: .9rem;
+    color: #fff;
+}
+h3{
+    color: #fff;
+}
+h4{
+    font-size: 1rem;
+    color: #fff;
+}
+/* REUSUABL COMPNENETS */
+.row {
+    max-width: 114rem;
+    margin: 0 auto;
+}
+.btn:link,
+.btn:visited,
+.btn {
+    width: 11rem;
+    background: #ffc74a;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    font-size: .8rem;
+    padding: .6rem 0;
+    border: .2rem solid #ffc74a;
+    border-radius: 2rem;
+    transition: .5s;
+    cursor: pointer;;
+}
+
+.btn:hover,
+.btn:active {
+    background: transparent;
+    color: #fff;
+}
+.little-description {
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 3rem;
+}
+
+/*==================================
+    2.HERO
+=====================================*/
+#hero {
+    height: 120vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/poland-bg.jpg) no-repeat center / cover;
+}
+.hero-text-box {
+    text-align: center;
+}
+.logo {
+    height: 3.5rem;
+    width: auto;
+    margin-top: 2rem;
+    margin-left: 1.6rem;
+    float: left;
+}
+#hero h2{
+    color: #707571;
+    margin-top: 1.3rem;
+}
+/* NAVIGATION MENU ITEMS */
+.menu-items {
+    float: right;
+    margin-top: 2rem;
+}
+.menu-items li {
+    display: inline-block;
+    margin-left: 1rem;
+    margin-right: 1.6rem;
+}
+.manu-items li:first-child {
+    margin-left: 0;
+}
+.menu-items li a:link, 
+.menu-items li a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: .6rem 1rem;
+    display: inline-block;
+    font-size: 1.2rem;
+    transition: .3s;
+}
+.menu-items li a:hover{
+    color: #ffc74a;
+}
+.btn-hero {
+    margin-top: 1.5rem;
+}
+.little-description {
+    font-size: 1rem;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate( -0% , 150%);
+    margin-bottom: 0;
+}
+/*==================================
+    2.VIEWBOX
+=====================================*/
+.grid-offer-container{
+    display: grid;
+    grid-template-columns:repeat(5, 1fr);
+    grid-gap: 1rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.grid-image {
+    background: url(img/place-1.jpg) center bottom / cover; 
+    width: 100%;
+    height: 18rem;
+}
+
+
+.grid-image2 {
+    background: url(img/place-2.jpg) center bottom / cover;
+    width: 100%;
+    height: 18rem;
+}
+
+
+.grid-image3 {
+    background: url(img/place-3.jpg)  center bottom / cover;
+    width: 100%;
+    height: 18rem;
+}
+
+
+.grid-image4 {
+    background: url(img/place-4.jpg)  center bottom / cover;
+    width: 100%;
+    height: 18rem;
+}
+
+
+.grid-image5 {
+    background: url(img/place-5.jpg)  center bottom / cover;
+    width: 100%;
+    height: 18rem;
+}
+
+ h3 {
+    padding-top: 2rem;
+}
+
+h4{
+    padding: 1.2rem;
+}
+ 
+.grid-offer-item:hover .btn-offer {
+        display: block;
+        font-size: 1rem;
+        margin-top: 2rem;
+        font-weight: 700;
+        text-align: center;
+        color: #fff;
+        margin-left: 1.6rem;
+        transition: .5s;
+}
+
+/*==================================
+    2.Search Place
+=====================================*/
+
+#search-place {
+    margin-top: 10rem;
+    height: 70rem;
+    
+    justify-content: center;
+    align-items: center;
+    background: #f8f9fb;
+}
+#search-place h2 {
+    font-size: 2.5rem;
+    color: #707571;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#search-place form {
+    width: 40rem;
+    height: 3rem;
+    margin-left: 22rem;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    align-items: center;
+    box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.8);
+}
+
+#search-place form input {
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+#search-place form a .lni {
+    color: #f8c759;
+    margin-left: 33rem;
+    margin-right: 0;
+    font-size: 1.8rem;
+}
+
+/*==================================
+    2.PROFOLIO BUTTON
+=====================================*/
+.group1 {
+    display: inline-block;
+    text-align: 40%;
+    margin-left: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+}
+.group2 {
+    margin-right: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    float: right;
+}
+.group1 button {
+    background: #707571;
+    color: #fff;
+}
+button {
+    font-size: 1rem;
+    color: #707571;
+    background: #fff;
+    border: .1rem solid rgb(0, 0, 0,0.1);
+    border-radius: 5rem;
+    padding: .5rem 1rem;
+}
+button:hover{
+    background:#ffc74a;
+    color: #fff;
+    transition: .3s ease-in;
+}
+
+/* portfolio-image */
+.grid-columns{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    text-align: center;
+}
+
+.portfolio-image {
+    width: 25rem;
+    height: 18rem;
+}
+
+.grid-item h4 {
+    color: #606f81;
+    margin-top: -1rem;
+    font-size: 1.8rem;
+}
+.grid-item h5 {
+    color: #606f81;
+    margin-top: -1rem;
+    font-size: .8rem;
+}
+
+#search-place .btn-offer {
+    background:#fff;
+    color: #606f81;
+    border: .1rem solid #707571;
+    margin-top: 1rem;
+}
+#search-place .btn-offer:hover {
+    background: #ffc74a;
+    color: #fff;
+}
+
+.columnsmt {
+    margin-top: 2rem;
+}
+
+/*==================================
+    2.EXPLORE
+=====================================*/
+#explore {
+    width: 100%;
+    height: 40rem;
+    background: #f8f9fb;
+}
+.grid-colnums-explore {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    text-align: center;
+}
+.grid-items-explore {
+    width: auto;
+    height:20rem;
+}
+
+#explore h2 {
+    color: #606f81;
+    font-size: 3.5rem;
+    background: #f8f9fb;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2rem;
+    margin-bottom: .5rem;
+
+}
+#explore h3 {
+    color: #f8c759;
+    font-size: 3rem;
+    background: #f8f9fb;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    line-height: 1.2rem;
+    margin-bottom: 1rem;
+    
+}
+#explore p {
+    color: #05070554;
+    background: #fff;
+    border: .1rem solid rgb(96, 111, 129, 0.2);
+    text-align: justify;
+    text-transform: capitalize;
+    text-decoration-style: dotted;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 14rem;
+    height: 15rem;
+}
+
+
+.btn-explore:hover {
+    color: #ffc74a;
+}
+.grid-items-explore .image {
+    background: url(img/demo-4.jpg) no-repeat center / cover;
+    width: 65%;
+    height: 100%;
+    padding: 1rem;
+    box-shadow: 10px 10px #f8f9fb, 20px 20px #f8c759;
+    margin: 2rem;
+}
+
+/*==================================
+    2.ENJOY
+=====================================*/
+#enjoy {
+    width: 100%;
+    height: 20rem;
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.9)), url(img/expolar.jpg) no-repeat center / cover;
+    margin-top: 0;
+    text-align: center;
+}
+.bg-enjoy h2 {
+    color: #f8f9fb;
+    font-size: 3rem;
+    padding-top: 6rem;
+    margin-bottom: 1.5rem;
+}
+.bg-enjoy a:hover {
+    color: #f8f9fb;
+    font-size: 1rem;
+}
+.bg-enjoy h4 a {
+    color: #f8c759;
+}
+/*==================================
+    2.FOOTER
+=====================================*/
+footer {
+    width: 100%;
+    height: 12rem;
+}
+.bg-icon {
+    text-align: center;
+    transform: translate(1270%, 50%);
+    margin-bottom: 1rem;
+}
+footer h4 {
+    color: #606f81;
+    text-align: center;
+}
+footer h4 a {
+    color: #7797bd;
+}
+
+footer h4 a:hover {
+    color: #f8c759;
+}
